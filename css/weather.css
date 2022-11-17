@@ -2,7 +2,7 @@
   border-radius: 25px;
 }
 
-h1 {
+h1, body {
   font-family: Rockwell;
   text-align: center;
   margin-left: auto;
@@ -10,6 +10,26 @@ h1 {
 }
 
 img {
-  display: flex;
-  width: 500px;
+  display: inline-block;
+  width: 50%;
+}
+
+button {
+  display: inline-block;
+  background-color: black;
+  border-radius: 25px;
+  font-size: 22px;
+  color: white;
+  padding: 18px 24px;
+  /* transform: translateY(-50px); */
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+div {
+  text-align: center;
 }

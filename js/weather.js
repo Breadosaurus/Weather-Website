@@ -1,35 +1,95 @@
-// const img1 = document.createElement("img1");
-var img1 = "img/autumn.png";
+// HATS
+var hatImg1 = "img/autumn.png";
+var hatImg2 = "img/end.jpg";
+var hatImg3 = "";
+var hatImg4 = "";
 
-// const img2 = document.createElement("img2");
-var img2 = "img/end.jpg";
+var hatImgArray = [hatImg1, hatImg2, hatImg3, hatImg4];
 
-var img3 = "";
+var hatI = 0;
 
-var img4 = "";
-
-var imgArray = [img1, img2, img3, img4];
-
-var i = 0;
-
-function right() {
-  if(i == imgArray.length - 1) { // if we're at the end of the array, go back to the first image
-     i = 0;
-     document.getElementById("pic").src = imgArray[i];
+function hatRight() {
+  if(hatI == hatImgArray.length - 1) { // if we're at the end of the array, go back to the first image
+    hatI = 0;
+    document.getElementById("hatPic").src = hatImgArray[hatI];
    }
    else { // go to the next img
-     i++;
-     document.getElementById("pic").src = imgArray[i];
+    hatI++;
+    document.getElementById("hatPic").src = hatImgArray[hatI];
    }
   }
 
-function left() {
-  if(i == 0) { // if we're at the first img, go to the last image
-    i = imgArray.length - 1;
-    document.getElementById("pic").src = imgArray[i];
+function hatLeft() {
+  if(hatI == 0) { // if we're at the first img, go to the last image
+    hatI = hatImgArray.length - 1;
+    document.getElementById("hatPic").src = hatImgArray[hatI];
   }
   else { // go to the prev image
-    i--;
-    document.getElementById("pic").src = imgArray[i];
+    hatI--;
+    document.getElementById("hatPic").src = hatImgArray[hatI];
+  }
+}
+
+// SHIRTS
+var shirtImg1 = "img/autumn.png";
+var shirtImg2 = "img/end.jpg";
+var shirtImg3 = "";
+var shirtImg4 = "";
+
+var shirtImgArray = [shirtImg1, shirtImg2, shirtImg3, shirtImg4];
+
+var shirtI = 0;
+
+function shirtRight() {
+  if(shirtI == shirtImgArray.length - 1) { // if we're at the end of the array, go back to the first image
+    shirtI = 0;
+    document.getElementById("hatPic").src = shirtImgArray[shirtI];
+   }
+   else { // go to the next img
+    shirtI++;
+    document.getElementById("hatPic").src = shirtImgArray[shirtI];
+   }
+  }
+
+function shirtLeft() {
+  if(shirtI == 0) { // if we're at the first img, go to the last image
+    shirtI = shirtImgArray.length - 1;
+    document.getElementById("shirtPic").src = shirtImgArray[shirtI];
+  }
+  else { // go to the prev image
+    shirtI--;
+    document.getElementById("shirtPic").src = shirtImgArray[shirtI];
+  }
+}
+
+// PANTS
+var pantImg1 = "img/autumn.png";
+var pantImg2 = "img/end.jpg";
+var pantImg3 = "";
+var pantImg4 = "";
+
+var pantImgArray = [shirtImg1, shirtImg2, shirtImg3, shirtImg4];
+
+var pantI = 0;
+
+function pantRight() {
+  if(pantI == pantImgArray.length - 1) { // if we're at the end of the array, go back to the first image
+    pantI = 0;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
+   }
+   else { // go to the next img
+    pantI++;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
+   }
+  }
+
+function pantLeft() {
+  if(pantI == 0) { // if we're at the first img, go to the last image
+    pantI = pantImgArray.length - 1;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
+  }
+  else { // go to the prev image
+    pantI--;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
   }
 }
