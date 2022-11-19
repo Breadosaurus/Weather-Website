@@ -93,3 +93,33 @@ function pantLeft() {
     document.getElementById("pantPic").src = pantImgArray[pantI];
   }
 }
+
+// Username Implementation
+function sortingHat(str) {
+  len = str.length;
+  mod = len % 4 ;
+
+  if (mod==0) {
+    return "Heavy Outfit"
+  }
+  else if (mod==1) {
+    return "Summer Outfit"
+  }
+  else if (mod==2) {
+    return "Medium T-shirt and Jeans"
+  }
+  else if (mod==3) {
+    return "Raincoats"
+  }
+  else if (mod==4) {
+    return "Funny Outift"
+  }
+}
+
+var myButton = document.getElementById("button");
+myButton.addEventListener("click", function() {
+  var name = document.getElementbyId("input").value;
+  var house = sortingHat(name);
+  newText = "<p> Your results are your... " + "</p>";
+  document.getElementById("output").innerHTML = newText;
+});
