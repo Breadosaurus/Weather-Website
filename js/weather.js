@@ -112,14 +112,14 @@ function sortingHat(str) {
     return "Raincoats"
   }
   else if (mod==4) {
-    return "Funny Outift"
+    return "Funny Outfit"
   }
 }
 
-var myButton = document.getElementById("button");
+var myButton = document.getElementById("mybutton");
 myButton.addEventListener("click", function() {
-  var name = document.getElementbyId("input").value;
+  var name = document.getElementById("username").value;
   var house = sortingHat(name);
-  newText = "<p> Your results are your... " + "</p>";
+  newText = "<p> Your results are your... " + house + "</p>";
   document.getElementById("output").innerHTML = newText;
 });
