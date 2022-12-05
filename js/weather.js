@@ -1,6 +1,6 @@
 // HATS
-var hatImg1 = "IMG_7485.png";
-var hatImg2 = "IMG_7489.png";
+var hatImg1 = "img/IMG_7485.png";
+var hatImg2 = "img/IMG_7489.png";
 var hatImg3 = "";
 var hatImg4 = "";
 
@@ -31,8 +31,8 @@ function hatLeft() {
 }
 
 // SHIRTS
-var shirtImg1 = "IMG_7486.png";
-var shirtImg2 = "IMG_7490.png";
+var shirtImg1 = "img/IMG_7486.png";
+var shirtImg2 = "img/IMG_7490.png";
 var shirtImg3 = "";
 var shirtImg4 = "";
 
@@ -63,12 +63,12 @@ function shirtLeft() {
 }
 
 // PANTS
-var pantImg1 = "IMG_7487.png";
-var pantImg2 = "IMG_7491.png";
+var pantImg1 = "img/IMG_7487.png";
+var pantImg2 = "img/IMG_7491.png";
 var pantImg3 = "";
 var pantImg4 = "";
 
-var pantImgArray = [shirtImg1, shirtImg2, shirtImg3, shirtImg4];
+var pantImgArray = [pantImg1, pantImg2, pantImg3, pantImg4];
 
 var pantI = 0;
 
@@ -93,6 +93,49 @@ function pantLeft() {
     document.getElementById("pantPic").src = pantImgArray[pantI];
   }
 }
+
+// PANTS
+var pantImg1 = "img/IMG_7487.png";
+var pantImg2 = "img/IMG_7491.png";
+var pantImg3 = "";
+var pantImg4 = "";
+
+var pantImgArray = [shirtImg1, shirtImg2, shirtImg3, shirtImg4];
+
+var pantI = 0;
+
+function pantRight() {
+  if(pantI == pantImgArray.length - 1) { // if we're at the end of the array, go back to the first image
+    pantI = 0;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
+   }
+   else { // go to the next img
+    pantI++;
+    document.getElementById("pantPic").src = pantImgArray[pantI];
+   }
+  }
+
+// SHOES
+var shoeImg1 = "img/IMG_7488.png";
+var shoeImg2 = "img/IMG_7492.png";
+var shoeImg3 = "";
+var shoeImg4 = "";
+
+var shoeImgArray = [shoetImg1, shoetImg2, shoetImg3, shoetImg4];
+
+var shoeI = 0;
+
+function shoeLeft() {
+  if(shoeI == 0) { // if we're at the first img, go to the last image
+    shoeI = shoeImgArray.length - 1;
+    document.getElementById("shoePic").src = shoeImgArray[shoeI];
+  }
+  else { // go to the prev image
+    shoeI--;
+    document.getElementById("shoePic").src = shoeImgArray[shoeI];
+  }
+}
+
 
 // Username Implementation
 function sortingHat(str) {
