@@ -1,6 +1,6 @@
 // HATS
-var hatImg1 = "img/autumn.png";
-var hatImg2 = "img/end.jpg";
+var hatImg1 = "img_7485.png";
+var hatImg2 = "img_7489.png";
 var hatImg3 = "";
 var hatImg4 = "";
 
@@ -31,8 +31,8 @@ function hatLeft() {
 }
 
 // SHIRTS
-var shirtImg1 = "img/autumn.png";
-var shirtImg2 = "img/end.jpg";
+var shirtImg1 = "img_7486.png";
+var shirtImg2 = "img_7490.png";
 var shirtImg3 = "";
 var shirtImg4 = "";
 
@@ -63,8 +63,8 @@ function shirtLeft() {
 }
 
 // PANTS
-var pantImg1 = "img/autumn.png";
-var pantImg2 = "img/end.jpg";
+var pantImg1 = "img_7487.png";
+var pantImg2 = "img_7491.png";
 var pantImg3 = "";
 var pantImg4 = "";
 
