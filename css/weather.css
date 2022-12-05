@@ -2,6 +2,7 @@
   border-radius: 25px;
 }
 
+
 h1, body {
   font-family: Rockwell;
   text-align: center;
@@ -32,4 +33,20 @@ button:hover {
 
 div {
   text-align: center;
+}
+
+h1{
+  color: black;
+  font-size:200%
+}
+
+body {
+  background: radial-gradient(circle, white 0%, #b3d7ff 100%);
+  color: black;
+  font-size: 100%;
+  padding: 20px;
+  margin: 20px;
+  border-style: double;
+  border-radius: 30px;
+  font-size: 15px;
 }
