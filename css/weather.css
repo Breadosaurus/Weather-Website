@@ -46,6 +46,10 @@ button:hover {
   color: black;
 }
 
+button {
+  height:75px;
+}
+
 div {
   text-align: center;
 }
